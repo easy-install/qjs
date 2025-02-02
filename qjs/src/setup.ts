@@ -1,4 +1,4 @@
 import { setupManifest } from '@easy-install/easy-install'
-import manifest from './qjsc.json'
+import manifest from './qjs.json'
 
 setupManifest(manifest)

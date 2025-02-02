@@ -33,8 +33,10 @@ jobs:
       - name: test
         run: |
           cd qjs
+          ./cli/setup.js
           ./cli/qjs.js --help
           ./cli/qjs.js -e "console.log('hello qjs')"
 
           cd ../qjsc
+          ./cli/setup.js
           ./cli/qjsc.js

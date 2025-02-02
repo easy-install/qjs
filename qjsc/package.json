@@ -21,6 +21,7 @@
   "author": "easy-install",
   "license": "ISC",
   "scripts": {
+    "clear": "rm -rf node_modules dist bundle",
     "postinstall": "node ./cli/setup.js",
     "dev": "tsc -w -p tsconfig.build.json",
     "build": "esbuild --outdir=bundle --bundle --minify --platform=node --format=cjs src/*.ts"

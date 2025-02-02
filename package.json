@@ -21,13 +21,13 @@
     "format": "deno fmt --ignore=node_modules,dist,bundle,target --indent-width=2 --no-semicolons --single-quote",
     "dev": "pnpm run --parallel dev",
     "build": "pnpm run -r build",
-    "clear": "rm -rf node_modules dist bundle",
+    "clear": "pnpm run -r clear",
     "bump": "pnpm up --latest --force",
     "release": "pnpm publish -r --access public"
   },
   "devDependencies": {
-    "@easy-install/easy-install": "^1.2.5",
-    "@types/node": "^22.10.7",
+    "@easy-install/easy-install": "^1.2.6",
+    "@types/node": "^22.13.0",
     "esbuild": "^0.24.2",
     "typescript": "^5.7.3"
   }
