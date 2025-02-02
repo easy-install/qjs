@@ -1,6 +1,6 @@
 {
   "name": "@easy-install/qjs",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "The js cli of qjs/qjsc",
   "bin": {
     "qjsc": "cli/qjsc.js"
