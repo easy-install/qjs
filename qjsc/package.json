@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "The js cli of qjs/qjsc",
   "bin": {
-    "qjs": "cli/qjs.js"
+    "qjsc": "cli/qjsc.js"
   },
   "files": [
     "cli",
@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/easy-install/qjs#readme",
   "keywords": [
-    "qjs"
+    "qjsc"
   ],
   "author": "easy-install",
   "license": "ISC",

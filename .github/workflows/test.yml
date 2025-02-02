@@ -30,19 +30,25 @@ jobs:
         run: |
           pnpm install
           pnpm run build
+      - name: install musl
+        if: startsWith(matrix.os, 'ubuntu')
+        run: |
+          sudo apt install musl-dev -y
+          sudo ln -s /usr/lib/x86_64-linux-musl/libc.so /lib/libc.musl-x86_64.so.1
+
       - name: test
         run: |
-          echo console.log("Hello, QuickJS!"); >> hello.js
+          echo "console.log('hello qjs')" >> hello.js
 
           cd qjs
           ./cli/setup.js
           ./cli/qjs.js --help
           ./cli/qjs.js -e "console.log('hello qjs')"
           ./cli/qjs.js ../hello.js
-
+          ./cli/qjs.js -o hello -c ../hello.js
+          ./hello
 
           cd ../qjsc
           ./cli/setup.js
           ./cli/qjsc.js -o hello ../hello.js
-          ./hello
-
+          cat ./hello
