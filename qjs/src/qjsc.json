@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "https://github.com/quickjs-ng/quickjs/releases/latest/download/qjsc-linux-x86_64": {
+      "name": "qjsc",
+      "target_triples": ["x86_64-unknown-linux-gnu"]
+    },
+    "https://github.com/quickjs-ng/quickjs/releases/download/v0.8.0/qjsc-windows-x86_64.exe": {
+      "name": "qjsc",
+      "target_triples": ["x86_64-pc-windows-gnu"]
+    },
+    "https://github.com/quickjs-ng/quickjs/releases/download/v0.8.0/qjsc-darwin": {
+      "name": "qjsc",
+      "target_triples": ["x86_64-apple-darwin", "aarch64-apple-darwin"]
+    }
+  }
+}

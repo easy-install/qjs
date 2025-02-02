@@ -1,0 +1,28 @@
+{
+  "name": "@easy-install/qjs",
+  "version": "0.1.0",
+  "description": "The js cli of qjs/qjsc",
+  "bin": {
+    "qjsc": "cli/qjsc.js"
+  },
+  "files": [
+    "cli",
+    "bundle",
+    "readme.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easy-install/qjs.git"
+  },
+  "homepage": "https://github.com/easy-install/qjs#readme",
+  "keywords": [
+    "qjs"
+  ],
+  "author": "easy-install",
+  "license": "ISC",
+  "scripts": {
+    "postinstall": "node ./cli/setup.js",
+    "dev": "tsc -w -p tsconfig.build.json",
+    "build": "esbuild --outdir=bundle --bundle --minify --platform=node --format=cjs src/*.ts"
+  }
+}
