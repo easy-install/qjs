@@ -32,11 +32,17 @@ jobs:
           pnpm run build
       - name: test
         run: |
+          echo console.log("Hello, QuickJS!"); >> hello.js
+
           cd qjs
           ./cli/setup.js
           ./cli/qjs.js --help
           ./cli/qjs.js -e "console.log('hello qjs')"
+          ./cli/qjs.js ../hello.js
+
 
           cd ../qjsc
           ./cli/setup.js
-          ./cli/qjsc.js
+          ./cli/qjsc.js -o hello ../hello.js
+          ./hello
+
