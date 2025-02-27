@@ -29,7 +29,6 @@ jobs:
       - name: build
         run: |
           pnpm install
-          pnpm run build
       - name: install musl
         if: startsWith(matrix.os, 'ubuntu')
         run: |
