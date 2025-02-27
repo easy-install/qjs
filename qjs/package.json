@@ -16,6 +16,9 @@
   "keywords": [
     "qjs"
   ],
+  "dependencies": {
+    "@easy-install/easy-install": "^1.3.7"
+  },
   "author": "easy-install",
   "license": "ISC",
   "scripts": {
