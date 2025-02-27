@@ -1,3 +1,2 @@
 const { run } = require("@easy-install/easy-install")
-const { join } = require("path")
-run(join(__dirname, "qjsc.json"), "qjsc")
+run("https://github.com/quickjs-ng/quickjs", "qjsc")
