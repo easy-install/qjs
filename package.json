@@ -4,9 +4,7 @@
   "private": true,
   "description": "The js cli of qjs/qjsc",
   "files": [
-    "cli",
-    "bundle",
-    "readme.md"
+    "cli"
   ],
   "repository": {
     "type": "git",
