@@ -43,11 +43,11 @@ jobs:
           node ./cli/setup.js
           node ./cli/qjs.js --help
           node ./cli/qjs.js -e "console.log('hello qjs')"
-          node ./cli/qjs.js hello.js
-          node ./cli/qjs.js -o hello -c hello.js
+          node ./cli/qjs.js ../hello.js
+          node ./cli/qjs.js -o hello -c ../hello.js
           ./hello
 
           cd ../qjsc
           node ./cli/setup.js
-          node ./cli/qjsc.js -o hello hello.js
+          node ./cli/qjsc.js -o hello ../hello.js
           cat ./hello
