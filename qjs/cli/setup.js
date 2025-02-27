@@ -1,6 +1,4 @@
-#!/usr/bin/env node
+const { setup } = require("@easy-install/easy-install")
+const { join } = require("path")
 
-const p = require('path').join(__dirname, '..', 'bundle', 'setup.js')
-if (require('fs').existsSync(p)) {
-  require(p)
-}
+setup(join(__dirname, "qjs.json"))
